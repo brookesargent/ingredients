@@ -55,7 +55,7 @@ type URLIngredients struct {
 }
 
 var ts = []URLIngredients{
-	{
+	/*{
 		"https://www.bonappetit.com/recipe/bas-best-chocolate-chip-cookies",
 		[]string{"1 1/4 tsp salt", "3/4 tsp baking soda", "3/4 cup butter", "1 cup brown sugar", "1/4 cup sugar", "1 whole egg", "2 whole egg yolks", "2 tsp vanilla", "6 oz chocolate chips"},
 	},
@@ -94,7 +94,7 @@ var ts = []URLIngredients{
 	{
 		"www.cooksillustrated.com/recipes/11519-indian-butter-chicken-murgh-makhani",
 		[]string{"2 tablespoons butter", "1/2 whole onion", "3 whole garlic", "2 teaspoons ginger", "2 teaspoons serrano chile", "1 1/2 teaspoons garam masala", "1/2 teaspoon coriander", "1/4 teaspoon cumin", "1/4 teaspoon pepper", "3/4 cup water", "1/4 cup tomato paste", "1 1/2 teaspoons sugar", "1 teaspoon salt", "1/2 cup heavy cream", "1 pound chicken thighs", "1/4 cup greek yogurt", "1 1/2 tablespoons cilantro", "11 g sugar"},
-	},
+	},*/
 	{
 		URL: "www.greatbritishchefs.com/recipes/key-lime-pie-recipe/",
 		Ingredients: []string{"130g unsalted butter", "200g plain flour", "1 whole egg", "1 tbsp lime juice", "300ml cream", "400g condensed milk", "1 tbsp lime zest", "15 key limes"},

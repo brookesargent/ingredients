@@ -89,32 +89,6 @@ func Load(fname string) (r *Recipe, err error) {
 	return
 }
 
-// ParseTextIngredients parses a list of ingredients and
-// returns an ingredient list back
-func ParseTextIngredients(text string) (ingredientList IngredientList, err error) {
-	r := &Recipe{FileName: "lines"}
-	r.FileContent = text
-	lines := strings.Split(text, "\n")
-	i := 0
-	goodLines := make([]string, len(lines))
-	for _, line := range lines {
-		line = strings.TrimSpace(line)
-		if len(line) == 0 {
-			continue
-		}
-		goodLines[i] = line
-		i++
-	}
-	_, r.Lines = scoreLines(goodLines)
-	err = r.parseRecipe()
-	if err != nil {
-		return
-	}
-
-	ingredientList = r.IngredientList()
-	return
-}
-
 // NewFromFile generates a new parser from a HTML file
 func NewFromFile(fname string) (r *Recipe, err error) {
 	r = &Recipe{FileName: fname}
